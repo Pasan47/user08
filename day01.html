@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <h4>Heading</h4>
+    <img src="images.jpg">
+    <ul>
+        <li>Maleesha</li>
+        <li>Kavinda</li>
+    </ul>
+    
+    <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #000;">
+
+    </canvas>
+
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+        </tr>
+    </table>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"
+        stroke="green" stroke-width="4" fill="yellow"/>
+        
+    </svg>
+    <svg width="320" height="130">
+        <rect width="300" height="100" x="10" y="10" style="fill:rgb(0,0,255);stroke-width:3;stroke:red" />
+      </svg>
+
+      <svg height="220" width="500" >
+        <polygon points="100,10 150,190 50,190" style="fill:rgb(57, 30, 107);stroke:purple;stroke-width:3" />
+      </svg>
+      <div>
+        <table>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+            <tr>
+                <td>d</td>
+                <td>e</td>
+                <td>f</td>
+            </tr>
+
+        </table>
+      </div>
+      <div>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+          </form>
+      </div>
+      <div>
+        <h1>HTML Geolocation</h1>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+      </div>
+
+
+    <footer>
+        <p>this is a footer<br>
+        <a href="http://127.0.0.1:5500/index.html">index page</a></p>
+    </footer>
+</body>
+</html>
